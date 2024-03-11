@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Telefônica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <img src="./images/logo.png" alt="Add Contact logo" >
+        <h1>Lista de Contatos</h1>
+    </header>
+    <form>
+        <input type="text"  id="name" placeholder="Nome">
+        <input type="tel" id="phone" name="phone" pattern={1}[0-9]{11,14}" required placeholder="DDD 99999-9999">
+        <button type="submit">Adicionar +</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Número de Telefone</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td id="nome-contato">---</td>
+                <td id="fone-contato">---</td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
